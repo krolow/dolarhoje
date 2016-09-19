@@ -27,7 +27,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	ac := accounting.Accounting{Symbol: "R$ ", Precision: 2}
+	ac := accounting.Accounting{Symbol: "R$ ", Precision: 2, Thousand: ".", Decimal: ","}
 
 	if len(os.Args) > 1 {
 		reais, err := strconv.ParseFloat(os.Args[1], 64)
